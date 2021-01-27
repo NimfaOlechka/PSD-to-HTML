@@ -131,8 +131,12 @@ header {
 .nav_link:hover{
     color: #fce38a;
 }
-.nav_link:hover:after{
+.nav_link:hover:after,
+.nav_link.active:after {
     opacity: 1;    
+}
+.nav_link.active {
+    color: #fce38a;
 }
 
 /*Button*/
@@ -160,16 +164,24 @@ header {
 }
 
 /*Slider*/
-.slider {
+.slider {    
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.slider_home {
     display: flex;
     justify-content: space-between;
-    text-align: left;
-    margin-top: 30px;
+    text-align: left;    
     color: #fff;
 }
 .slider_item {
     width: 23%;
     padding: 0 20px;
+    position: relative;
 
     border-top: 2px solid;
     opacity: .7;
@@ -180,6 +192,20 @@ header {
 
 .slider_item.active {
     opacity: 1;
+}
+
+.slider_item.active::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2px;
+
+    background-color: #f38181;
+
+    position: absolute;
+    top: -2px;
+    left: 0;
+    z-index: 1;
 }
 
 .slider_num {
