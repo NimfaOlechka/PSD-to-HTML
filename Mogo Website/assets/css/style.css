@@ -218,7 +218,7 @@ header {
 .section_header {
     width: 100%;
     max-width: 950px;
-    margin: 40px auto 40px;
+    margin: 40px auto 50px;
 
     text-align: center;
     
@@ -334,4 +334,37 @@ header {
 }
 .stay_desc {
     font-size: 14px;
+}
+
+/*Services*/
+.services {
+    display: flex;
+    padding: 40px 0;
+}
+
+.services_item {
+    flex: 1 1 0;
+
+    padding-left: 85px;
+    padding-right: 35px;
+    position: relative;
+}
+
+.services_icon {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    z-index: 1;
+}
+
+.services_title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.services_text {
+    font-family:'Roboto', sans-serif;
+    color: #999;
+    font-size: 15px;
 }
