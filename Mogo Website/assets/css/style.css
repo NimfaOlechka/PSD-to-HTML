@@ -303,15 +303,35 @@ header {
 
 /*Statistics*/
 .statistics {
+    margin-top: 80px;
     background-color: #95e1d3;
 }
 
 .stat {
     display: flex;
+    text-transform: uppercase;
 }
 
 .stat_item {
     flex: 1 1 0;
+    padding: 50px 25px;
 
-    border-left: 1px solid #fff;
+    text-align: center;
+    color: #fff;
+
+    border-left: 1px solid #b5eae0;
+}
+
+.stat_item:last-child {
+    border-right: 1px solid #b5eae0;
+}
+
+.stat_count {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+.stay_desc {
+    font-size: 14px;
 }
