@@ -227,6 +227,7 @@ header {
 
 .section--devices {
     padding-bottom: 0;
+    margin-bottom: 40px;
 
     background: 
     url("../images/devices_bgrd.jpg") 
@@ -238,7 +239,7 @@ header {
 .section_header {
     width: 100%;
     max-width: 950px;
-    margin: 40px auto 50px;
+    margin: 50px auto;
 
     text-align: center;
     
@@ -406,4 +407,71 @@ header {
     bottom: -80px;
     right: 0;
     z-index: 1;
+}
+
+/*We Do*/
+
+.we_do {
+    display: flex;
+}
+
+.we_do_item {
+    width: 50%;
+}
+
+/*Accordion*/
+
+.accordion_item {
+    border: 1px solid #e5e5e5e5;
+}
+.accordion_header {
+    border-bottom: 1px solid #e5e5e5;
+
+    padding: 15px 20px 15px 65px ;
+    position: relative;
+}
+.accordion_header:after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    z-index: 1;
+    
+    border-top: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.accordion_icon {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    z-index: 1;
+
+    transform: translateY(-50%);
+
+}
+.accordion_title {
+
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+
+}
+.accordion_content {
+    display: none;
+
+    padding: 15px 20px;
+
+    font-family:'Roboto', sans-serif;
+    color: #999;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+
 }
