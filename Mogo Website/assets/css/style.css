@@ -500,6 +500,7 @@ header {
 /*Reviews*/
 .reviews {
     padding: 0 110px;
+    position: relative;
 }
 
 .reviews_item {
@@ -542,13 +543,14 @@ header {
 
 }
 
+/*Reviws slider buttons*/
 .reviews_btn {
     font-size: 0;
     color: transparent;
     position: absolute;
     top: 50%;
     z-index: 1;
-    transform: translateY(-50%); 
+    transform: translate(-50%); 
 }
 
 .reviews_btn:after {
@@ -556,17 +558,18 @@ header {
     display: block;
     width: 16px;
     height: 16px;
-
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    z-index: 1;
+    position: absolute;    
     
     border-top: 2px solid #ccc;
-    border-left: 2px solid #ccc;
-    
-    transform: translateY(-50%) rotate(45deg);
+    border-left: 2px solid #ccc;    
+  
 }
 .reviews_btn--prev {
-    transform: translateY(-50%); 
+    left: 0; 
+    transform: rotate(-45deg);
+}
+
+.reviews_btn--next {
+    right: 0;
+    transform: rotate(135deg);
 }
