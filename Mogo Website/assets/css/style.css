@@ -990,6 +990,9 @@ header {
 
 .instagram_item img {
     display: block;
+    width: 88px;
+    height: 88px;
+    margin-left: 5px;
 }
 
 /*Subscribe*/
